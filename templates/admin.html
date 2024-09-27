@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h2>{{ page_title }}</h2>
+    
+     <!-- Main Content -->
+   <!--test from cairocoders youtube-->
+   
+   <div class=" d-flex justify-content-center">
+
+    <!--button for signin page-->
+        <div class="text-center">
+        <a href="" class="btn btn-primary" data-toggle="modal" data-target="#signinPage">Admin Log In<i class="fas fa-sign-in-alt ml-3"></i></a>
+        </div>
+
+        <!--content of Log in page-->
+
+       <div class="modal fade" id="signinPage">
+        <div class="modal-dialog">
+          <div class="modal-content">
+              <div class="modal-header text-center">
+                  <h3 class="modal-title w100 dark-grey-text font-weight-bold">Admin Sign In</h3>
+                  <button type="button" class="close" data-dismiss="modal" arial-label="close">&times;</button>
+              </div>
+
+              <div class="modal-body mx-4">
+                  <div class="md-form">
+                      <input type="email" class="form-control validate">
+                      <label data-error="wrong" data-success="right">Your Email</label>
+                  </div>
+
+                  <div class="md-form">
+                      <input type="password" class="form-control validate">
+                      <label data-error="wrong" data-success="right">Your Password</label>
+                      <p class="font-small blue-text d-flex justify-content">Forgot<a href="#" class="blue-text ml-1">Password?</a></p>
+                  </div>
+
+                  <div class="text-center mb-3">
+                      <button type="button" class="btn btn-primary btn-block z-depth-la">Sign In</button>
+                  </div>
+              
+              </div>
+          </div>
+        </div>
+       </div>
+     
+{% endblock %}  
+
+
